@@ -20,7 +20,7 @@ void main()
   print(sum);
 
 
-  //Find the age of all friends and print it.
+  //Find the sum of age of all friends and print it.
    List<Friend> myFriends = [
     Friend(name: 'max', age: 12),
     Friend(name: 'coca', age: 30),
