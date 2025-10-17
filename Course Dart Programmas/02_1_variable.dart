@@ -16,7 +16,8 @@ void main() {
   // - Must be initialized when declared or in constructor
   // - Value is determined at runtime (can use functions, calculations)
   // - Use for values that shouldn't change after initialization
-  final String city = 'New York';
+  final String? city;
+  city = 'New York';
   // city = 'Los Angeles'; // invalid - cannot reassign final variables
   print('City: $city');
 
