@@ -90,7 +90,7 @@ void main() {
   print('Is not empty: ${fruits.isNotEmpty}');
   print('Contains "Banana": ${fruits.contains("Banana")}');
   print('Index of "Cherry": ${fruits.indexOf("Cherry")}');
-  print('Sublist (1, 3): ${fruits.sublist(1, 3)}');
+  print('Sublist (1, 3): ${fruits.sublist(1, 4)}');
 
   /// clear() - Removes all elements
   List<String> tempList = ['A', 'B', 'C'];

@@ -8,6 +8,7 @@ List<String> rw (List<String> list, String a){
       list.remove(i);
         print(i);
     }
+    
   
   }
  
