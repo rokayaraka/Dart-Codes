@@ -1,21 +1,26 @@
-
-List<String> rw (List<String> list, String a){
-  print(list.length); 
-  for(var i in list)
+List<String> rw(List<String> list, String a) {
+  print(list.length);
+  // for (var i in list) {
+  //   if (i == a) {
+  //     // list.remove(i);
+  //     list.remove(i);
+  //     print(i);
+  //   }
+  // }
+  for(int i=0;i<=list.length; i++)
   {
-    if(i==a){
-      // list.remove(i);
-      list.remove(i);
-        print(i);
+        if (list[i] == a) {
+      list.removeAt(i); // do not advance i after removal
+    } else {
+      i++;
     }
-    
-  
   }
- 
+
   return list;
 }
-void main()
-{
+
+
+void main() {
   // List<String> cities = ['New York', 'London', 'Tokyo', 'Paris', 'Sydney'];
   //   print('\nCombining where and map:');
   // var result = cities
@@ -24,8 +29,7 @@ void main()
   // print('  $result');
   // print(result.runtimeType);
 
-
-  final list =['apple','banana','orange'];
+  final list = ['apple', 'banana', 'orange'];
   // final result1 =list.where((fruit)=>fruit.length>5);
   // print(result1.runtimeType);
 
@@ -34,4 +38,3 @@ void main()
   final list1 = rw(list, 'apple');
   print(list1);
 }
-

@@ -51,7 +51,7 @@ void switchCaseExample() {
 
 /// Pattern Matching with Switch (Dart 3.0+)
 void patternMatchingExample() {
-  var value = 42;
+  var value = 0;
 
   switch (value) {
     case int n when n.isEven:
