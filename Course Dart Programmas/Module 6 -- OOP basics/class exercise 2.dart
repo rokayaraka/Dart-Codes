@@ -1,9 +1,8 @@
 class Vehicle {
   String make;
   String model;
-  
 
-  Vehicle({required this.make, required this.model});
+  Vehicle(this.make, this.model);
 
   void drive() {
     print("Driving the $make $model");
@@ -11,18 +10,16 @@ class Vehicle {
 }
 
 class Car extends Vehicle {
-  Car({required super.make, required super.model});
+  Car(super.make, super.model);
   int numberOfDoors = 4;
   @override
-  void drive()
-  {
+  void drive() {
     super.drive();
     print("This car has $numberOfDoors doors");
   }
 }
 
 void main() {
-  var myCar = Car(make: 'Toyota', model: 'Corolla');
+  var myCar = Car('Toyota', 'Corolla');
   myCar.drive();
-
 }
